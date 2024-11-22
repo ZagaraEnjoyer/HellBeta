@@ -1,0 +1,305 @@
+@font-face {
+    font-family: fira;
+    src: url(Fonts/FiraCodeiScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: lobster;
+    src: url(Fonts/Lobster-Regular.ttf);
+}
+@font-face{
+    font-family: alex;
+    src: url(/Fonts/AlexBrush-Regular.ttf);
+}
+
+* {
+    color: #b1ccef;
+    text-shadow: 2px 1px 2px #6f94c4;
+}
+
+body {
+    background-color: #180a41;
+    text-align: center;
+}
+body.date{
+    background-color: #79360a;
+    background-image: linear-gradient(to bottom right, #79360a, rgb(247, 88, 44), #79360a)
+}
+div.page{
+    box-shadow: 10px 10px #53275c;
+}
+div.date{
+    box-shadow: 10px 10px #ff7c24;
+}
+
+p, pre, li {
+    font-size: 26px;
+    font-family: fira;
+}
+
+code {
+    background-color: #27262f;
+    border-radius: 5px;
+    padding: 2px;
+    padding-inline: 5px;
+}
+.page h1{
+    font-size:400%;
+    font-style:italic;
+    font-weight: bold;
+    font-family: alex;
+
+}
+
+/* text-shadow: 3px 4px 2px #5462b1; */
+
+img {
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+
+}
+
+footer {
+    bottom: 0;
+}
+
+.poem{
+    font-size:400%;
+    text-decoration:underline;
+    font-style:italic;
+    font-weight: bold;
+    font-family: alex;
+}
+
+
+.Hide{
+    cursor:text;
+}
+
+@keyframes rainbow {
+    0% {color: #e5bf42; background-color: #ff5500; box-shadow:5px 2px 0px #ffb700; text-shadow:0px 1px 10px #a4f355;}
+    10% {color: yellow;background-color: rgb(112, 6, 79); box-shadow:5px 2px 0px rgb(112, 6, 29); text-shadow:0px 1px 10px #d5a630;}
+    20% {color: #920075; background-color:#2de2e6; box-shadow:5px 2px 0px #46e62d; text-shadow:0px 1px 10px #860072;}
+    30% {color: purple; background-color: rgb(60, 11, 176); box-shadow:10px 2px 0px rgb(176, 173, 11); text-shadow:0px 1px 10px #e91dd8;}
+    40% {color: #742bf3; background-color: #b6a4ff; box-shadow:5px 2px 0px #eea4ff; text-shadow:0px 1px 10px #4ccb85;}
+    50% {color: #42e5d2; background-color: #0d0221; box-shadow:5px 2px 0px #25104e; text-shadow:0px 1px 10px #ca15e6;}
+    60% {color: #ddff02; background-color: #38aceb; box-shadow:5px 2px 0px #4138eb; text-shadow:0px 1px 10px #ffec3d;}
+    70% {color: #742bf3; background-color: #0d0221; box-shadow:5px 2px 0px #200221; text-shadow:0px 1px 10px #ff22a7;}
+    80% {color: #70e542; background-color: #fce219; box-shadow:5px 2px 0px #68fc19; text-shadow:0px 1px 10px #141318;}
+    90% {color: #e54242; background-color: #4bdeff; box-shadow:5px 2px 0px #4b84ff; text-shadow:0px 1px 10px #ffbb00;}
+    100% {color: #e5bf42; background-color: #0822a4; box-shadow:5px 2px 0px #4e08a4; text-shadow:0px 1px 10px #a4f355;}
+
+}
+
+.madness {
+    
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+.hide {
+    color: #1c0130;
+    text-shadow: none;
+}
+.hide:hover {
+    
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+
+nav h1 {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 55px;
+    font-family: lobster;
+}
+
+nav h3 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-left: 20px;
+    font-family: fira;
+}
+
+.page {
+    width: 70%;
+    height: calc(fit-content + 20%);
+    display: block;
+    margin: auto;
+    background-color: #1c0130;
+    padding: 15px;
+    padding-inline: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    font-family: fira;
+}
+
+.page.date {
+    background-image: linear-gradient(to bottom left, #800000, #f07b27,#800000, #800000, #800000, #800000, #800000, #800000);
+}
+
+
+.options {
+    display:grid;
+    grid-template-columns: 1.3fr 1.3fr;
+    grid-template-rows: 5fr 5fr;
+    gap: 70px;
+    padding: 90px;
+}
+
+.options.death {
+    display: block;
+    margin: auto;
+}
+
+.options a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    margin: 40px;
+}
+
+.button-link {
+    border-radius: 0px;
+    border-style: solid;
+    border-color: #27262f;
+    padding: 10px;
+    font-family: fira;
+    font-size: 120%;
+    text-align: center;
+    place-self: center;
+    margin: 0px;
+    text-decoration: none;
+    background-color: #8035b6;
+    background-size: 40px;
+    box-shadow:10px 2px 0px#141318;
+    height: max-content;
+    position: static;
+}
+.button-link.date{
+    background-color: #ca753c;
+    box-shadow: 10px 2px 0px #9a3e00;
+    border-color: #ffae00;
+}
+
+
+.button-link:hover {
+    background-color: #79360a;
+    color:#88b2e9;
+    text-shadow: 0px 0px 10px #79d9ff;
+
+    border-color:#5d5a6e;
+    box-shadow: 4px 2px 0px #141318;
+    position:relative;
+    left: 6px;
+
+}
+
+
+.welcome {
+    font-family: fira;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome h2 {
+    margin-top: 45px;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    height: 49px;
+}
+
+.link {
+    color: blueviolet;
+}
+
+span {
+    /*UWU RWAR.... S-SENPAI?
+    */
+    color: inherit;
+
+}
+
+.angry{
+    color: crimson;
+    text-decoration: none;
+}
+
+
+
+.angy{
+    color: rgb(216, 13, 13);
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow:4px 4px 7px maroon;
+}
+
+.angy p{
+    font-size: 26px;
+
+}
+
+.apathy{
+    color: darkmagenta;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.fancy{
+    background-color: #141318;
+    color: #180a41;
+    box-shadow: 10px 2px 10px #180a41;
+    text-shadow:0px 0px 10px #1c0130;
+}
+.fancy:hover{
+    color: #ffe4d2;
+    text-shadow: 0px 0px 1000px #ffffff;
+}
+.button-link.fancy:hover{
+    background-color: #ffe4d2;
+    color:#81b6ff;
+    text-shadow: 1px 1px 100px #39ff95;
+    border-color:#ddd6ff;
+    box-shadow: 4px 2px 10000000px #ffffff;
+    position:relative;
+    left: 6px;
+}
+
+.surprise{
+    font-size: 150%;
+}
+
+.forn{
+    color: rgb(49, 232, 144);
+}
+.dread{
+    color: #e609ff;
+    text-shadow: 10px 10px 100000px #ff0000;
+    font-family: lobster;
+    font-size: 125%;
+}
+
+.silence{
+    text-decoration: line-through;
+}
